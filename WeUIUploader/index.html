@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>webUploader</title>
+	<link rel="stylesheet" href="css/weui.min.css"/>
+</head>
+<body>
+	<div class="page_bd">
+		<div class="weui-cells__title">上传车皮重图片信息</div>
+        <!--gallery start-->
+        <div class="weui-gallery" id="gallery">
+            <span class="weui-gallery__img" id="galleryImg"></span>
+            <div class="weui-gallery__opr">
+                <a href="javascript:" class="weui-gallery__del">
+                    <i class="weui-icon-delete weui-icon_gallery-delete"></i>
+                </a>
+            </div>
+        </div>
+        <div class="weui-gallery" id="gallery2">
+            <span class="weui-gallery__img" id="galleryImg2"></span>
+            <div class="weui-gallery__opr">
+            </div>
+        </div>
+        <!--gallery end-->
+        <div class="weui-cell pic">
+            <div class="weui-cell__bd">
+                <div class="weui-uploader">
+                    <div class="weui-uploader__hd weui_cell">
+                        <div class="weui-uploader__title">车皮重图片[如样图所示]</div>
+                        <div class="weui-uploader__info js_counter">0/1</div>
+                    </div>
+                    <div class="weui-uploader__bd">
+                        <ul class="weui-uploader__files">
+                            <li class="weui-uploader__file" id="eg" style="background-image:url(./img/tdh2.png)"></li>
+                         </ul>
+                        <div class="weui-uploader__input-box">
+                            <input class="weui-uploader__input js_file" type="file" name="file_upload" id="files" accept="image/jpg,image/jpeg,image/png,image/gif" multiple="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="js_dialog" style="display: none;">
+        <div class="weui-mask"></div>
+        <div class="weui-dialog">
+            <div class="weui-dialog__bd">弹窗内容</div>
+            <div class="weui-dialog__ft">
+                <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">知道了</a>
+            </div>
+        </div>
+    </div>
+	</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/upload.js"></script>
+</body>
+</html>
